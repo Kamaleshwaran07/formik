@@ -16,7 +16,7 @@ const Card = ({ item, setId }) => {
         await axios.delete(`https://65e480343070132b3b24d97f.mockapi.io/books/${id}`)
             .then(res => { console.log('Deleted', res.data.id) })
             .catch(err => console.error("Error deleting book", err))
-    
+            navigate('/body')
     }
 
     return (

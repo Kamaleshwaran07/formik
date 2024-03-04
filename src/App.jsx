@@ -4,7 +4,7 @@ import Home from './Components/Home';
 import Navbar from './Components/Navbar';
 import Body from './Components/Body';
 import Edit from './Components/Edit';
-// import Create from './Components/Create';
+import Create from './Components/Create';
 
 import './App.css'
 // import Error from './Components/Error';
@@ -97,7 +97,7 @@ const App = () => {
           <Route path='/' element={<Home />} />
           <Route path='/body' element={<Body setId = {setId} />} />
           <Route path='/edit/:id' element={<Edit id ={id} />} />
-          {/* <Route path='/create' element={<Create />} /> */}
+          <Route path='/create' element={<Create />} />
           {/* <Route path='*' element={<Error />} /> */}
 
         </Routes>
