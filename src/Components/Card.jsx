@@ -1,3 +1,4 @@
+import axios from 'axios';
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
@@ -11,7 +12,12 @@ const Card = ({ item, setId }) => {
 
         navigate(`/edit/${id}`)
     }
+    const handleDelete = async (id) => {
+        await axios.delete(`https://65e480343070132b3b24d97f.mockapi.io/books/${id}`)
+            .then(res => { console.log('Deleted', res.data.id) })
+            .catch(err => console.error("Error deleting book", err))
     
+    }
 
     return (
         <div className='card '>
@@ -23,7 +29,7 @@ const Card = ({ item, setId }) => {
             <h3>{item.author_birthday}</h3>
             <h3>{item.description}</h3>
             <button className='btn' onClick={() => handleEdit(item.id)}>Edit</button>
-            <button className='btn' onClick={() => handleEdit(item.id)}>Delete</button>
+            <button className='btn' onClick={() => handleDelete(item.id)}>Delete</button>
         </div>
     );
 };
