@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Card from './Card';
 import axios from 'axios';
 
-const Body = ({setId}) => {
+const Body = ({ setId }) => {
 
     const [data, setData] = useState([])
 
@@ -19,13 +19,13 @@ const Body = ({setId}) => {
 
 
     return (
-        <div>
-            Body
+        <div className='container row'>
+
 
             {data.map((item, index) => {
                 return (
-                    <div key={index}>
-                        <Card item={item} setId = {setId} />
+                    <div className='col-4' key={index}>
+                        <Card item={item} setId={setId} />
                     </div>
 
                 )
