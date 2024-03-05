@@ -19,12 +19,12 @@ const Body = ({ setId }) => {
 
 
     return (
-        <div className='container row'>
+        <div className='ms-6 me-0 row d-flex justify-content-center'>
 
 
             {data.map((item, index) => {
                 return (
-                    <div className='col-4' key={index}>
+                    <div className='col-4 mt-5 ' key={index}>
                         <Card item={item} setId={setId} />
                     </div>
 

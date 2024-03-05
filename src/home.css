@@ -1,6 +1,6 @@
-.image{
+.contentImage{
    position: absolute ;
-   right: 200px;
+   right: 100px;
     height: 400px;
     width: 600px;
     /* background-repeat: no-repeat;
@@ -11,10 +11,10 @@
     position: relative;
 }
 .content{
-    top: 50px;
-    left: 125px;
+    top: 75px;
+    left: 70px;
     position: absolute;
-    width: 500px;
+    width: 475px;
 }
 .pacifico-regular {
   font-family: "Pacifico", cursive;

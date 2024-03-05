@@ -1,0 +1,23 @@
+.image{
+    height: 400px;
+}
+.btn{
+    width: 5em;
+    /* background-color: bisque; */
+}
+.card{
+    height: 42em;
+    width: 27em;
+}
+.context{
+   height: 20em;
+}
+footer{
+    height: 6em;
+}
+.josefin-sans{
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
