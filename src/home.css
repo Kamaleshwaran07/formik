@@ -1,0 +1,27 @@
+.image{
+   position: absolute ;
+   right: 200px;
+    height: 400px;
+    width: 600px;
+    /* background-repeat: no-repeat;
+    background-position: right; */
+}
+.position{
+    top: 100px;
+    position: relative;
+}
+.content{
+    top: 50px;
+    left: 125px;
+    position: absolute;
+    width: 500px;
+}
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+.home{
+    background-color: #eacfb6!important;
+    height: 100vh;
+}
