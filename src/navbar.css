@@ -1,0 +1,12 @@
+.container-fluid {
+  justify-content: initial !important; /* Use initial to reset justify-content */
+}
+
+.navbar-nav {
+  width: 70%;
+  text-align: center;
+}
+
+.navbar-nav .nav-item {
+  display: inline-flex;
+}
