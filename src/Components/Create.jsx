@@ -3,9 +3,10 @@ import { ErrorMessage, Field, Form, Formik, useFormik } from 'formik';
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import * as Yup from 'yup';
+import '../edit.css'
 
 
-const Create = ({ id }) => {
+const Create = ({ }) => {
 
 
     const [data, setData] = useState({
@@ -55,7 +56,7 @@ const Create = ({ id }) => {
         initialValues: {
             data
         },
-        schema,
+        validationSchema: schema,
         onSubmit: async (values) => {
             await axios.post(`https://65e480343070132b3b24d97f.mockapi.io/books`, values)
                 .then(res => console.log(res.data))
@@ -64,51 +65,65 @@ const Create = ({ id }) => {
         }
     })
     return (
-        <div>
-            Edit {id}
+        <div className='bg-sky-500/30'>
+
             <div className='body ' id='form'>
-                <div className='containeR mt-3 d-flex justify-content-center'  >
+                <div className='container mt-3 d-flex justify-content-center' id='container' >
                     <form className='row ' onSubmit={formik.handleSubmit} >
-                        <div className='fs-4 edit'>Edit Form</div>
+                        <div className='fs-4 edit'>Create Form</div>
 
                         <div className='col-12 form-floating'>
                             <input type='text' className='form-text form-control' id='floatingInput' value={formik.values.title} name='title' placeholder='Title' onChange={formik.handleChange} />
+                            {formik.touched.title && formik.errors.title && (
+                                <div className='text-danger'>{formik.errors.title}</div>
+                            )}
                             <label className='ms-2' for='floatingInput'>Title</label>
                         </div>
                         <div className='col-12 form-floating'>
 
                             <input type='text' className='form-text form-control' value={formik.values.author} name='author' placeholder='Author' onChange={formik.handleChange} />
+                            {formik.touched.author && formik.errors.author && (
+                                <div className='text-danger'>{formik.errors.author}</div>
+                            )}
                             <label className='ms-2' for='floatingInput'>Author</label>
-
                         </div>
                         <div className='col-12  form-floating'>
 
-                            <input type='text' className='form-text form-control' id='floatingInput' value={formik.values.author_birthday} placeholder='author_birthday' name='author_birthday' onChange={formik.handleChange}/>
+                            <input type='text' className='form-text form-control' id='floatingInput' value={formik.values.author_birthday} placeholder='author_birthday' name='author_birthday' onChange={formik.handleChange} />
+                            {formik.touched.author_birthday && formik.errors.author_birthday && (
+                                <div className='text-danger'>{formik.errors.author_birthday}</div>
+                            )}
                             <label className='ms-2' for='floatingInput'>Birthday</label>
-
                         </div>
                         <div className='col-12 form-floating'>
 
-                            <input type='text' className='form-text form-control' id='floatingInput' value={formik.values.description} placeholder='Description' name='description' onChange={formik.handleChange}  />
+                            <input type='text' className='form-text form-control' id='floatingInput' value={formik.values.description} placeholder='Description' name='description' onChange={formik.handleChange} />
+                            {formik.touched.description && formik.errors.description && (
+                                <div className='text-danger'>{formik.errors.description}</div>
+                            )}
                             <label className='ms-2' for='floatingInput'>Description</label>
-
                         </div>
                         <div className='col-12 form-floating'>
 
-                            <input type='text' className='form-text form-control' id='floatingInput' value={formik.values.isbn} placeholder='ISBN' name='isbn' onChange={formik.handleChange} required />
+                            <input type='text' className='form-text form-control' id='floatingInput' value={formik.values.isbn} placeholder='ISBN' name='isbn' onChange={formik.handleChange} />
+                            {formik.touched.isbn && formik.errors.isbn && (
+                                <div className='text-danger'>{formik.errors.isbn}</div>
+                            )}
                             <label className='ms-2' for='floatingInput'>ISBN</label>
-
                         </div>
                         <div className='col-12 form-floating'>
 
-                            <input type='text' className='form-text form-control' id='floatingInput' value={formik.values.publication_date} name='publication_date' placeholder='Publication Date' onChange={formik.handleChange} required />
+                            <input type='text' className='form-text form-control' id='floatingInput' value={formik.values.publication_date} name='publication_date' placeholder='Publication Date' onChange={formik.handleChange} />
 
+                            {formik.touched.publication_date && formik.errors.publication_date && (
+                                <div className='text-danger'>{formik.errors.publication_date}</div>
+                            )}
                             <label className='ms-2' for='floatingInput'>Publication_ Date</label>
                         </div>
 
-                        <div className='col-12 mt-4'>
+                        <div className='col-12 mt-4 button'>
 
-                            <button className='btn btn-primary' type='submit'>Create</button>
+                            <button className='btn btn-outline-primary' type='submit'>Create</button>
                         </div>
                     </form>
                 </div>

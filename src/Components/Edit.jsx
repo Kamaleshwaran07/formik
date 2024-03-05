@@ -6,8 +6,7 @@ import * as Yup from 'yup';
 import '../edit.css'
 
 
-const Edit = ({ id }) => {// Other imports and code...
-
+const Edit = ({ id }) => {
 
     const [editData, setEditData] = useState({
         title: '',
