@@ -1,0 +1,19 @@
+header{
+    text-align: center;
+}
+#container{
+    width: 50em;
+}
+.button{
+    
+    display: flex;
+    justify-content: center;
+}
+.edit{
+    text-align: center;
+}
+.body{
+
+    height: 90.9vh;
+    overflow-y:hidden;
+}
