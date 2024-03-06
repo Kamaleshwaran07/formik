@@ -49,6 +49,7 @@
         width: 80%;
         right: 5em;
         z-index: 0;
+        filter: blur(5px);
         -webkit-filter: blur(5px);
 
     }
@@ -69,6 +70,7 @@
 @media screen and (max-width: 426px){
     .contentImage{
         background-color: rgba(0, 0, 0, 0.498);
+        filter: blur(5px);
         -webkit-filter: blur(5px);
         width: 350px;
         left: 25px;
