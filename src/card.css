@@ -3,6 +3,7 @@
 }
 .btn{
     width: 5em;
+    align-content: center;
     /* background-color: bisque; */
 }
 .card{
@@ -20,4 +21,11 @@ footer{
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
+}
+@media  screen and (max-width: 1025px) {
+    .card{
+        height: 42em;
+        width: 24em;
+    }
+    
 }

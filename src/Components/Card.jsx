@@ -36,8 +36,8 @@ const Card = ({ item, setId }) => {
             </div>
             <footer className='mt-2 d-flex justify-content-center card-footer p-2'>
 
-                <button className='btn btn-danger me-2 ' onClick={() => handleDelete(item.id)}>Delete</button>
-                <button className='btn btn-primary me-2 ' onClick={() => handleEdit(item.id)}>Edit</button>
+                <button className='btn btn-danger d-flex justify-content-center p-2 me-2 ' onClick={() => handleDelete(item.id)}>Delete</button>
+                <button className='btn btn-primary d-flex justify-content-center p-2 me-2 ' onClick={() => handleEdit(item.id)}>Edit</button>
             </footer>
         </div>
     );
