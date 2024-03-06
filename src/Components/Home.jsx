@@ -5,12 +5,12 @@ import '../home.css'
 
 const Home = () => {
   return (
-    <div className='home'>
+    <div className='home container-fluid'>
 
-      <div className='container position d-flex'>
+      <div className=' position d-flex'>
         <div className='content me-6'>
           <h5 className='text-lg'>Start your reading journey tomorrow</h5>
-          <h1 className='text-6xl pacifico-regular mt-2'>Where every page is a new adventure</h1>
+          <h1 className='lg:text-6xl text-4xl pacifico-regular mt-2'>Where every page is a new adventure</h1>
           <br />
           <p>From classics to contemporary, our bookstore offers a wide selection of books to suit every taste and interest.
             Start exploring our shelves today and uncover your next literary gem</p>

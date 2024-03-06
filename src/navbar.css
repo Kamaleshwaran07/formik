@@ -6,7 +6,31 @@
   width: 85%;
   text-align: center;
 }
+@media  screen and (max-width:1305px){
+.navbar-nav{
+  width: 75%;
+  text-align: center;
+}
 
+}
+@media  screen and (max-width:769px){
+.navbar-nav{
+  width: 65%;
+  text-align: center;
+}
+
+}
+@media  screen and (max-width:426px){
+.navbar-nav{
+  width: 40%;
+  text-align: center;
+}
+  .nav-item{
+    font-size: 1.2em;
+  }
+
+
+}
 .navbar-nav .nav-item {
   display: inline-flex;
 }

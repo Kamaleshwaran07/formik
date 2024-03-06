@@ -8,7 +8,7 @@ const Navbar = () => {
     return (
         <nav className='navbar'>
             <div className='container-fluid'>
-                <div className='navbar-brand font-bold fs-5'>Book World</div>
+                <div className='navbar-brand font-bold  fs-5'>Book World</div>
                 {/* <div className='center'> */}
 
                 <ul className='navbar-nav flex-row justify-content-center'>
