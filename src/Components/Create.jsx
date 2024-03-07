@@ -74,7 +74,7 @@ const Create = ({ }) => {
 
                         <div className='col-12 form-floating'>
                             <input type='text' className='form-text form-control' id='floatingInput' value={formik.values.title} name='title' placeholder='Title' onChange={formik.handleChange} />
-                            {formik.touched.title && formik.errors.title && (
+                            {formik.errors.title && (
                                 <div className='text-danger'>{formik.errors.title}</div>
                             )}
                             <label className='ms-2' for='floatingInput'>Title</label>
@@ -82,7 +82,7 @@ const Create = ({ }) => {
                         <div className='col-12 form-floating'>
 
                             <input type='text' className='form-text form-control' value={formik.values.author} name='author' placeholder='Author' onChange={formik.handleChange} />
-                            {formik.touched.author && formik.errors.author && (
+                            {formik.errors.author && (
                                 <div className='text-danger'>{formik.errors.author}</div>
                             )}
                             <label className='ms-2' for='floatingInput'>Author</label>
@@ -90,7 +90,7 @@ const Create = ({ }) => {
                         <div className='col-12  form-floating'>
 
                             <input type='text' className='form-text form-control' id='floatingInput' value={formik.values.author_birthday} placeholder='author_birthday' name='author_birthday' onChange={formik.handleChange} />
-                            {formik.touched.author_birthday && formik.errors.author_birthday && (
+                            {formik.errors.author_birthday && (
                                 <div className='text-danger'>{formik.errors.author_birthday}</div>
                             )}
                             <label className='ms-2' for='floatingInput'>Birthday</label>
@@ -98,7 +98,7 @@ const Create = ({ }) => {
                         <div className='col-12 form-floating'>
 
                             <input type='text' className='form-text form-control' id='floatingInput' value={formik.values.description} placeholder='Description' name='description' onChange={formik.handleChange} />
-                            {formik.touched.description && formik.errors.description && (
+                            {formik.errors.description && (
                                 <div className='text-danger'>{formik.errors.description}</div>
                             )}
                             <label className='ms-2' for='floatingInput'>Description</label>
@@ -106,7 +106,7 @@ const Create = ({ }) => {
                         <div className='col-12 form-floating'>
 
                             <input type='text' className='form-text form-control' id='floatingInput' value={formik.values.isbn} placeholder='ISBN' name='isbn' onChange={formik.handleChange} />
-                            {formik.touched.isbn && formik.errors.isbn && (
+                            {formik.errors.isbn && (
                                 <div className='text-danger'>{formik.errors.isbn}</div>
                             )}
                             <label className='ms-2' for='floatingInput'>ISBN</label>
@@ -115,7 +115,7 @@ const Create = ({ }) => {
 
                             <input type='text' className='form-text form-control' id='floatingInput' value={formik.values.publication_date} name='publication_date' placeholder='Publication Date' onChange={formik.handleChange} />
 
-                            {formik.touched.publication_date && formik.errors.publication_date && (
+                            {formik.errors.publication_date && (
                                 <div className='text-danger'>{formik.errors.publication_date}</div>
                             )}
                             <label className='ms-2' for='floatingInput'>Publication_ Date</label>
